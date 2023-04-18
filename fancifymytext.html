@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+		<script src ="fancifymytext.js"></script>
+		
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+
+		<!-- Text Box-->
+		<label for="Text">Text</label>
+		<fieldset name="text">
+			<textarea id = "inputText-1" rows = "4" cols = "30"></textarea>
+		</fieldset>
+
+		<!-- Fancify Box-->
+		<label for="Fancify">Fancify</label>
+		<fieldset name="fancifyControls-1">
+			<!-- Button for "Bigger!" -->
+			<button name="btn1" onclick="makeBigger()">Bigger!</button>
+			<button name="btn2" onclick="makeMoo()">Moo!</button>
+
+			<!-- Radio Buttons -->
+			<!-- To make sure only one can be selected, give them have the same name -->
+			
+			<!-- FancyShmancy-->
+			<input type="radio" onchange="makeFancy()" id="fs" name="type" value="FancyShmancy">
+			<label for="FancyShmancy">FancyShmancy</label><br>
+
+			<!-- BoringBetty -->
+			<input type="radio" onchange="makeBoring()" id="bb" name="type" value="BoringBetty">
+			<label for="BoringBetty">BoringBetty</label><br>
+		</fieldset>
+
+	</body>
+</html>
